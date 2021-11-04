@@ -1,4 +1,4 @@
-/*  */
+/* Finished November 4th, 2021 */
     // Write a program that will calculate the number of trailing zeros in a factorial of a given number.
     // N! = 1 * 2 * 3 * ... * N
     // Be careful 1000! has 2568 digits...
@@ -17,9 +17,10 @@ function zeros(n) {
     let num = n;
     let j = 0;
     let ans = 0;
-    while (num > 5) {
+    while (num >= 5) {
         num /= 5;
         j++;
+        console.log(j);
     }
     for (i = 1; i <= j; i++) {
         ans += Math.floor(n / Math.pow(5, i));
