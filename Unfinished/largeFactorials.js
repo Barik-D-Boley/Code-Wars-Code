@@ -10,7 +10,12 @@ function factorial(n) { // Read the first number, add it to a string, then subtr
         ans *= n;
         n--;
     }
-    return ans - (4 * Math.pow(10, 273)) - (7 * Math.pow(10, 272));
+
+    for (let i = 0; i < array.length; i++) {
+        
+    }
+    // return ans - (4 * Math.pow(10, 273)) - (7 * Math.pow(10, 272));
+    return ans.toString().slice(0, 1);
     // return ans;
 }
 
