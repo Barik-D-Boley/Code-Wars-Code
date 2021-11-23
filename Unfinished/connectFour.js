@@ -12,6 +12,8 @@ function printGrid(grids) {
 }
 
 function whoIsWinner(moves) {
+    console.log(moves);
+
     let grid = [
         [0,0,0,0,0,0],
         [0,0,0,0,0,0],
@@ -117,24 +119,18 @@ function whoIsWinner(moves) {
     printGrid(grid);
     return 'Draw';
 }
-whoIsWinner([
-        'C_Yellow',
-        'C_Yellow',
-        'C_Yellow',
-
-        'D_Yellow',
-        'D_Yellow',
-        'D_Yellow',
-        'D_Red',
-
-        'E_Yellow',
-        'E_Yellow',
-        'E_Red',
-
-        'F_Red',
-        'F_Red',
-
-        'G_Red',
-
-        'C_Yellow',
-        ])
+whoIsWinner([ 'A_Yellow',
+  'B_Red',
+  'B_Yellow',
+  'C_Red',
+  'G_Yellow',
+  'C_Red',
+  'C_Yellow',
+  'D_Red',
+  'G_Yellow',
+  'D_Red',
+  'G_Yellow',
+  'D_Red',
+  'F_Yellow',
+  'E_Red',
+  'D_Yellow' ])
